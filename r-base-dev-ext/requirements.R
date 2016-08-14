@@ -1,4 +1,5 @@
 pkg_list <- c(
+  "roxygen2",
   "data.table",
   "ggplot2",
   "foreach",
