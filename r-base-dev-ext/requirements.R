@@ -13,4 +13,5 @@ pkg_list <- c(
   "lintr",
   "testthat",
   "caret",
+  "forecast",
   "shiny")
