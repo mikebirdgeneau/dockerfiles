@@ -15,4 +15,5 @@ pkg_list <- c(
   "testthat",
   "caret",
   "forecast",
-  "shiny")
+  "shiny",
+  "bookdown")
