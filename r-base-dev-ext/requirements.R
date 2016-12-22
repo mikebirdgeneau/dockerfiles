@@ -16,4 +16,6 @@ pkg_list <- c(
   "caret",
   "forecast",
   "shiny",
-  "bookdown")
+  "bookdown"
+  "mvtnorm",
+  "docuair")
