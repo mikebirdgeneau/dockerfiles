@@ -17,4 +17,7 @@ pkg_list <- c(
   "forecast",
   "shiny",
   "bookdown",
-  "FinCal")
+  "FinCal",
+  "documair",
+  "rmarkdown",
+  "miniUI")
