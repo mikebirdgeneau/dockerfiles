@@ -20,4 +20,5 @@ pkg_list <- c(
   "FinCal",
   "documair",
   "rmarkdown",
+  "mvtnorm",
   "miniUI")
