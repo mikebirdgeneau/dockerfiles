@@ -1,6 +1,7 @@
-FROM jangorecki/r-base-dev
+FROM jangorecki/r-base-dev:latest
+MAINTAINER Mike Birdgeneau <mike.birdgeneau@gmail.com>
 
-ADD requirements.R requirements.R
+COPY requirements.R requirements.R
 RUN apt-get update && apt-get -y install libgdal-dev libproj-dev
 RUN wget https://github.com/jgm/pandoc/releases/download/1.19.1/pandoc-1.19.1-1-amd64.deb
 RUN dpkg -i pandoc-1.19.1-1-amd64.deb
@@ -10,5 +11,7 @@ RUN apt-get -y remove libgdal-dev libproj-dev && apt-get -y autoremove
 
 RUN apt-get install python-pip -y
 RUN pip install awscli
+
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 CMD ["R"]
