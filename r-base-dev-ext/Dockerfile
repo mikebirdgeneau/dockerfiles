@@ -2,8 +2,7 @@ FROM jangorecki/r-base-dev:latest
 MAINTAINER Mike Birdgeneau <mike.birdgeneau@gmail.com>
 
 COPY requirements.R requirements.R
-RUN apt-get update -qq \
-	&& apt-get upgrade -y
+RUN apt-get update
 
 RUN apt-get install -y --no-install-recommends \
 		libgdal-dev \
