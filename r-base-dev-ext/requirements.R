@@ -21,4 +21,5 @@ pkg_list <- c(
   "documair",
   "rmarkdown",
   "mvtnorm",
-  "miniUI")
+  "miniUI",
+  "pander")
