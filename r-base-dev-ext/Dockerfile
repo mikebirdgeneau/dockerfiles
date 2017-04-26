@@ -17,5 +17,6 @@ RUN Rscript -e 'source("requirements.R"); install.packages(pkg_list,repos="https
 RUN Rscript -e 'install.packages("devtools"); devtools::install_github("Rdatatable/data.table")'
 RUN apt-get -y remove libgdal-dev libproj-dev && apt-get -y autoremove
 
+RUN pip install --upgrade pip
 RUN pip install awscli
 CMD ["R"]
